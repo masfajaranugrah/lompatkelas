@@ -10,7 +10,7 @@ function About() {
              <div class="animate_left flex gn gg jn/2 i">
               <div>
                 <img src="images/shape-05.svg" alt="Shape" class="h-[118px] -ud-left-5 x" />
-                <img src="images/1.png" alt="About" class="ib w-[200px]" />
+                {/* <img src="images/1.png" alt="About" class="ib w-[200px]" /> */}
                 <img src="images/2.jpg" alt="About" className='w-[200px]' />
               </div>
               <div>

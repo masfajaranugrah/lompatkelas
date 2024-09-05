@@ -22,9 +22,10 @@ export default function Hero() {
 
               <div className="tc tf yo zf mb">
                 <a href="https://api.whatsapp.com/send/?phone=6281226990080&text&type=phone_number&app_absent=0" className="ek jk lk gh gi hi rg ml il vc _d _l"
-                  >Contact me</a
+                  >Contact me
+                  </a
                 >
-
+ 
                 <span className="tc sf">
                   <p   className="inline-block ek xj kk wm"> Call  (+62) 812 2699 0080 </p>
                   <span className="inline-block">Untuk bertanya lebih lanjut</span>

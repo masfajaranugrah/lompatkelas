@@ -11,6 +11,7 @@ import Footer from '../Components/Footer';
 import Testimoni from '../Components/Testimoni';
 import Layanan from '../Components/Layanan';
 import Visimisi from './../Components/Visimisi';
+import Whatsapp from '../Components/whatsapp';
  
 function Home() {
   const location = useLocation();
@@ -41,6 +42,7 @@ function Home() {
       <Service id="layanan"/>
       {/* <Testimoni id="testimoni"/> */}
       <Contact id="contact"/>
+      <Whatsapp/>
       <Footer/>
  
     </main>
