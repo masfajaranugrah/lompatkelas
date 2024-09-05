@@ -48,7 +48,7 @@ const Header = () => {
                 <li>
                   <a 
                     href="/home" 
-                    className={`xl ${page === 'home' ? 'mk' : ''}`} 
+                    className={`xl font-bold  text-black ${page === 'home' ? 'mk' : ''}`} 
                     onClick={() => setNavigationOpen(false)}>
                       Home
                   </a>
@@ -56,31 +56,50 @@ const Header = () => {
                 <li>
                    <a 
                     href="/keunggulan" 
-                    className="xl" 
+                    className="xl font-bold  text-black " 
                     onClick={() => setNavigationOpen(false)}>
                 Keunggulan
                   </a>
                 </li>   
-                <li>
-                  <a 
-                    href="/about" 
-                    className="xl" 
-                    onClick={() => setNavigationOpen(false)}>
-                    About
-                  </a>
-                </li>
+              
                 <li>
                   <a 
                     href="/visi-and-misi" 
-                    className="xl" 
+                    className="xl font-bold  text-black " 
                     onClick={() => setNavigationOpen(false)}>
                     Visi&Misi
                   </a>
                 </li>
-                <li>
+         
+                <li className="c i">
+                  <a
+                    href="#"
+                    className={`xl  text-black font-bold tc wf yf bg ${['blog-grid', 'blog-single', 'signin', 'signup', '404'].includes(page) ? 'mk' : ''}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setDropdown(!dropdown);
+                    }}
+                  >
+                   Lainya
+                    <svg className={`th text-black mm we fd pf ${dropdown ? 'wh' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                    </svg>
+                  </a>
+
+                  {/* Dropdown Start */}
+                    <ul className={`a ${dropdown ? 'tc' : ''}`}>
+                    <li>
+                  <a 
+                    href="/about" 
+                    className="xl font-bold text-black" 
+                    onClick={() => setNavigationOpen(false)}>
+                    About
+                  </a>
+                </li>
+                    <li>
                   <a 
                     href="/team" 
-                    className="xl" 
+                    className="xl font-bold text-black" 
                     onClick={() => setNavigationOpen(false)}>
                     Team
                   </a>
@@ -88,39 +107,22 @@ const Header = () => {
                 <li>
                   <a 
                     href="/layanan" 
-                    className="xl" 
+                    className="xl font-bold text-black" 
                     onClick={() => setNavigationOpen(false)}>
                     Layanan
                   </a>
                 </li>
-                {/* <li className="c i">
-                  <a
-                    href="#"
-                    className={`xl tc wf yf bg ${['blog-grid', 'blog-single', 'signin', 'signup', '404'].includes(page) ? 'mk' : ''}`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setDropdown(!dropdown);
-                    }}
-                  >
-                    Pages
-                    <svg className={`th mm we fd pf ${dropdown ? 'wh' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                      <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-                    </svg>
-                  </a>
-
-                  {/* Dropdown Start */}
-                  {/* <ul className={`a ${dropdown ? 'tc' : ''}`}>
-                    <li><a href="blog-grid.html" className={`xl ${page === 'blog-grid' ? 'mk' : ''}`} onClick={() => setNavigationOpen(false)}>Blog Grid</a></li>
-                    <li><a href="blog-single.html" className={`xl ${page === 'blog-single' ? 'mk' : ''}`} onClick={() => setNavigationOpen(false)}>Blog Single</a></li>
-                    <li><a href="signin.html" className={`xl ${page === 'signin' ? 'mk' : ''}`} onClick={() => setNavigationOpen(false)}>Sign In</a></li>
-                    <li><a href="signup.html" className={`xl ${page === 'signup' ? 'mk' : ''}`} onClick={() => setNavigationOpen(false)}>Sign Up</a></li>
-                    <li><a href="404.html" className={`xl ${page === '404' ? 'mk' : ''}`} onClick={() => setNavigationOpen(false)}>404</a></li>
+                <li><a href="/contact" className="xl font-bold text-black" onClick={() => setNavigationOpen(false)}>Contact</a></li>
                   </ul>
-                  {/* Dropdown End */}
-                {/* </li>  */}
-                <li><a href="/contact" className="xl" onClick={() => setNavigationOpen(false)}>Contact</a></li>
+                  {/* {/* Dropdown End */}
+                 </li>   
+
               </ul>
             </nav>
+            <div>
+   
+            <a href="/contact"  class="lk gh dk rg tc wf xf _l gi hi">Contact</a>
+            </div>
           </div>
         </div>
       </header>
