@@ -21,8 +21,8 @@ function About() {
             </div>
 
              <div class="animate_right jn/2">
-              <h4 class="text-[18px]  font-bold">Tentang Lompat Kelas</h4>
-              <h2 class="text-[30px] text-black font-bold leading-10 my-2">Apakah kamu tau apa itu Lompat Kelas ?</h2>
+              <h4 class="text-[18px]  font-bold  text-[#fa9161]"># Lompat Kelas</h4>
+              <h2 class="text-[40px] text-black font-bold leading-10 my-2">Apakah kamu tau apa itu Lompat Kelas ?</h2>
               <p class="text-[18px]">
                 Lompat Kelas adalah sebuah perusahaan yang bergerak dalam bidang konsultasi kekayaan intelektual. yang berpusat di  jakarta selatan. Perusahaan ini didirikan pada tanggal 8 september 2015. Para Pendiri perusahaan adalah  Bp. Eko Budi Santoso dan Ibu.Darwati. saat ini Bp. Eko Budi Santoso menjabat sebagai Direktur Utama (Chief Executive Officer), sedangkan Ibu.Darwati menjaabat sebagi Komisaris.  
               </p>
@@ -30,8 +30,9 @@ function About() {
               <p href="#" data-fslightbox class="vc wf hg mb">
                 <span class="tc wf xf be dd rg i gh ua">
                   <span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
-                  <img src="images/icon-play.svg" alt="Play" />
-                </span>
+                  {/* <img src="images/icon-play.svg" alt="Play" /> */}
+ 
+                  <img width="30" height="30" src="https://img.icons8.com/stickers/40/easy-skin-type-1.png" alt="easy-skin-type-1"/>                </span>
                 <span class="kk">Ayo "Patenkan" kan !</span>
               </p>
             </div>

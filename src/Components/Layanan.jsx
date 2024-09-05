@@ -9,9 +9,8 @@ function Layanan() {
 
 
              <div class="animate_top kn to/kk tc cg oq">
-              <div class="tc wf xf cf ae cd rg mh">
-                <img src="images/icon-01.svg" alt="Icon" />
-              </div>
+              <div class="tc wf xf cf ae cd rg">
+              <img width="60" height="60" src="https://img.icons8.com/dusk/100/licence.png" alt="licence"/>              </div>
               <div>
               <h4 class="font-bold text-[20px] text-black pb-2">Resmi</h4>
               <p>Tercatat resmi secara nasional & internasional</p>
@@ -20,8 +19,8 @@ function Layanan() {
         
 
              <div class="animate_top kn to/kk tc cg oq">
-              <div class="tc wf xf cf ae cd rg oh">
-                <img src="images/icon-03.svg" alt="Icon" />
+              <div class="tc wf xf cf ae cd rg ">
+              <img width="60" height="60" src="https://img.icons8.com/color/100/checked-identification-documents.png" alt="checked-identification-documents"/>
               </div>
               <div>
                 <h4 class="font-bold text-[20px] text-black pb-2">Syarat Tidak Ribet</h4>
@@ -31,18 +30,18 @@ function Layanan() {
 
        
             <div class="animate_top kn to/kk tc cg oq">
-              <div class="tc wf xf cf ae cd rg oh">
-                <img src="images/icon-03.svg" alt="Icon" />
-              </div>
+              <div class="tc wf xf cf ae cd rg">
+              <img width="70" height="70" src="https://img.icons8.com/external-tal-revivo-green-tal-revivo/70/external-pie-chart-file-queue-isolated-on-a-white-background-business-green-tal-revivo.png" alt="external-pie-chart-file-queue-isolated-on-a-white-background-business-green-tal-revivo"/>                             </div>
               <div>
+
                 <h4 class="font-bold text-[20px] text-black pb-2">Proses Cepat</h4>
                 <p>Proses Cepat, online, melayani seluruh indonesia</p>
               </div>
             </div>
 
             <div class="animate_top kn to/kk tc cg oq">
-              <div class="tc wf xf cf ae cd rg oh">
-                <img src="images/icon-03.svg" alt="Icon" />
+              <div class="tc wf xf cf ae cd rg ">
+              <img width="60" height="60" src="https://img.icons8.com/pulsar-color/60/password-check.png" alt="password-check"/>
               </div>
               <div>
                 <h4 class="font-bold text-[20px] text-black pb-2">Keamanan</h4>
@@ -51,8 +50,8 @@ function Layanan() {
             </div>
 
             <div class="animate_top kn to/kk tc cg oq">
-              <div class="tc wf xf cf ae cd rg oh">
-                <img src="images/icon-03.svg" alt="Icon" />
+              <div class="tc wf xf cf ae cd rg ">
+              <img width="60" height="60" src="https://img.icons8.com/pulsar-color/60/no-beverages.png" alt="no-beverages"/>
               </div>
               <div>
                 <h4 class="font-bold text-[20px] text-black pb-2">Tanpa Cek Usaha & tanpa cek product</h4>
@@ -61,8 +60,8 @@ function Layanan() {
             </div>
 
             <div class="animate_top kn to/kk tc cg oq">
-              <div class="tc wf xf cf ae cd rg oh">
-                <img src="images/icon-03.svg" alt="Icon" />
+              <div class="tc wf xf cf ae cd rg ">
+              <img width="60" height="60" src="https://img.icons8.com/pulsar-color/60/document.png" alt="document"/>
               </div>
               <div>
                 <h4 class="font-bold text-[20px] text-black pb-2">Tanpa Ijin lain-nya</h4>

@@ -3,13 +3,13 @@ import React from 'react'
 function Visimisi() {
   return (
     <div>
-         <section class="lj tp kr" id='visi-and-misi'>
+         <section class="lj tp kr" >
          <div
- 
+ id='visi-and-misi'
           x-data="{ sectionTitle: `Visi Dan Misi`, sectionTitleText: `Visi Dan Misi Perusahaan.`}"
         >
-          <div class="animate_top bb ze rj ki xn vq">
-    <h2
+          <div  class="animate_top bb ze rj ki xn vq">
+    <h2 
             x-text="sectionTitle"
             class="text-[40px] font-bold text-black pb-2"
     >

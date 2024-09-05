@@ -16,13 +16,13 @@ export default function Hero() {
           <div className="tc _o">
             <div className="animate_left jn/2">
               <h1 className="text-[15px] font-bold text-[#fa9161]">#LOMPAT KELAS</h1>
-              <p className=" text-[30px] text-black font-bold leading-10">
+              <p className=" text-[50px] text-black font-bold leading-[3rem]">
                 Patenkan Karyamu, Lindungi Merekmu! Ayo Jadikan Indonesia Lebih Kuat!
               </p>
 
               <div className="tc tf yo zf mb">
-                <a href="https://api.whatsapp.com/send/?phone=6281226990080&text&type=phone_number&app_absent=0" className="ek jk lk gh gi hi rg ml il vc _d _l"
-                  >Contact me
+                <a href="/about" className="ek jk lk gh gi hi rg ml il vc _d _l"
+                  >Tentang Kami
                   </a
                 >
  
