@@ -57,7 +57,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-white">
+    <div className="bg-white"  id="home">
      
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
@@ -73,28 +73,40 @@ export default function Example() {
           />
         </div>
         <div class="container mx-auto px-6 flex relative py-16">
-            <div class="sm:w-2/3 lg:w-2/5 flex flex-col relative z-20">
-                <span class="w-20 h-2 bg-gray-800 dark:bg-white mb-12">
+            <div class="sm:w-2/3 lg:w-2/5 flex flex-col lg:justify-start lg:items-start md:justify-start md:items-start  justify-center items-center relative z-20">
+                <span class="w-20 h-2 bg-gray-800 dark:bg-white  mb-12">
                 </span>
-                <h1 class="font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none dark:text-white text-gray-800">
+                <h1 class="font-bebas-neue uppercase text-6xl text-center xl:text-left  lg:text-left md:text-left sm:text-8xl font-black flex flex-col leading-none dark:text-white text-gray-800">
                    Lompat
                     <span class="text-5xl sm:text-7xl">
                         Kelas
                     </span>
                 </h1>
-                <p class="text-[20px] my-10 sm:text-[15px] text-gray-700 dark:text-white">
+                <p class="lg:text-[20px] xl:text-[20px] text-center xl:text-left  lg:text-left md:text-left  text-[20px] my-5  text-gray-700 dark:text-white">
                      Patenkan Karyamu, Lindungi Merekmu! Ayo Jadikan Indonesia Lebih Kuat!
                 </p>
                 <div class="flex mt-8">
-                    <a href="/about" class="uppercase py-2 px-4 rounded-lg bg-pink-500 border-2 border-transparent text-white text-md mr-4 hover:bg-pink-400">
+                <span class="relative inline-flex">
+                <a href="/about" class="uppercase py-2 px-4 rounded-lg bg-[#4e6bff] border-2 border-transparent text-white text-md mr-4 hover:bg-[#4e6bff]">
                         Tentang Kami
                     </a>
+    <span class="flex absolute h-3 w-3 top-0 right-0 -mt-1 mr-[0.75rem]">
+    <span class="h-3 w-3 bg-[#e94776]  rounded-full">
+                  <span class="nf h vc yc vd rg  bg-[#e94776] qk -ud-z-1"></span>
+     </span>
+     </span>
+  </span>
+                  
                    
                 </div>
             </div>
-            <div class="hidden sm:block sm:w-1/3 lg:w-3/5 relative">
-                <img src="https://www.tailwind-kit.com/images/object/10.png" class="max-w-xs md:max-w-sm m-auto"/>
+            <div class="hidden sm:block sm:w-1/3 lg:w-[900px] relative">
+             
+            <img src="images/modern.gif" class="max-w-[32rem] md:max-w-[32rem] m-auto"/>
+
             </div>
+
+            
         </div>
   
         <div

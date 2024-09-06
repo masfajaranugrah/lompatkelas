@@ -3,6 +3,7 @@ import React from 'react'
 function Team() {
   return (
     <div id='team'>
+      <h1 className='flex justify-center items-center font-bold text-[40px] text-black mb-7'>Team</h1>
         <section class="i pg ji gp uq" >
          <span class="rc h s r vd fd/5 fh rm"></span>
         <img src="images/shape-08.svg" alt="Shape Bg" class="h q r" />
@@ -11,15 +12,14 @@ function Team() {
         <img src="images/shape-11.svg" alt="Shape" class="of h m ba" />
 
          <div
-          x-data="{ sectionTitle: `Meet With Our Creative Dedicated Team`, sectionTitleText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`}"
+          x-data="{ sectionTitle: `Meet With Our Creative Dedicated Team`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2
             x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
+            class="fk vj pr kk wm on/5 gq/2 bb _b z-[99999]"
     >
     </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
 </div>
 
 
@@ -30,7 +30,7 @@ function Team() {
              <div class="animate_top rj">
               <div class="c i pg z-1">
                 <img class="vd" src="images/team-02.png" alt="Team" />
-
+            
                 <div class="ef im nl il">
                   <span class="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
                   <span class="h s p rc vd hd mh va"></span>

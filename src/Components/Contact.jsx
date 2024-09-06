@@ -13,7 +13,7 @@ function Contact() {
 
         
         <div
-          x-data="{ sectionTitle: `Contact Kami`, sectionTitleText: `Berikut kami lampirkan informasi kontak yang dapat kamu hubungi.`}"
+          x-data="{ sectionTitle: `kontak Kami`, sectionTitleText: `Berikut kami lampirkan informasi kontak yang dapat kamu hubungi.`}"
         >
           <div class="animate_top bb ze rj ki xn vq">
     <h2

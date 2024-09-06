@@ -1,54 +1,63 @@
 import React from 'react'
+import { dataService } from '/src/db/db.jsx';  // Make sure to adjust the path based on your file structure
 
 function Service() {
+ 
   return (
     <main>
         <section class="lj tp kr">
-         <div 
-          x-data="{ sectionTitle: `Layanan Perusahaan`, sectionTitleText: `Berikut ini beberapa Layanan yang kami tawarkan.`}"
-        >
-             <div class="animate_top bb ze rj ki xn vq" id='layanan'>
+        <div 
+  // x-data="{ sectionTitle: `Layanan Perusahaan`, sectionTitleText: `Berikut ini beberapa Layanan yang kami tawarkan.`}"
+  x-data="{ sectionTitle: `Layanan Perusahaan`}"
+>
+  <div class="animate_top bb ze rj ki xn vq" id='layanan'>
     <h2
-            x-text="sectionTitle"
-            class="text-[40px] font-bold text-black pb-2 leading-10"
+      x-text="sectionTitle"
+      class="text-[40px] font-bold text-black pb-2 leading-10"
     >
     </h2>
-    <p class="text-[17px] font-semibold" x-text="sectionTitleText"></p>
+     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 200 20"
+      
+      // width="100%"
+      // height="30"
+      className='w-[100%] h-[25px] lg:h-[40px] xl:h-[40px] md:h-[40px]'
+    >
+      <path 
+        d="M0,10 Q50,0 100,10 T200,10"
+        stroke="#f7c948"
+        stroke-width="3"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+    
+    {/* <p class="text-[17px] font-semibold" x-text="sectionTitleText"></p> */}
+  </div>
 </div>
-        </div>
+
+        
         <div class="bb ze ki xn yq mb en">
-          <div class="wc qf pn xo ng">
-             <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-04.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Pendaftaran Merek (Brand) dan Logo</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-            </div>
+          <div>
 
-             <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-05.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Pendaftarn Hak Cipta</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-            </div>
-
-             <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-06.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Pendaftaran Paten</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-            </div>
-
-             <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-07.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Pendaftaran Design Industri</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-            </div>
-
-             <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-05.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Pendaftaran Indikasi Geografis</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</p>
-            </div>
-
+             <ul role="list" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3">
              
+             {dataService.map((lay) => {
+                return(
+                       
+                     <li class="rounded-2xl border border-gray-200 p-8" key={lay.id}>
+                        {lay.logo}
+                          <h3 class="mt-6 font-semibold text-gray-900 text-[30px] leading-10">{lay.name}</h3>
+                          <p class="mt-2 text-gray-700 text-[15px]">{lay.des}</p>
+                    </li> 
+                )
+              })
+             }
+                        </ul>
+
+
           </div>
         </div>
       </section>

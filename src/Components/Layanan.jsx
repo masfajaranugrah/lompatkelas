@@ -1,73 +1,48 @@
 import React from 'react'
-
+import {datalayanan} from '/src/db/db.jsx'
 function Layanan() {
   return (
     <div id="keunggulan">
       <section  className='mt-20'>
-        <div class="bb ze ki yn 2xl:ud-px-12.5">
+      <div className="relative pb-6 flex justify-center items-center">
+  <h1 className="text-[40px] font-bold text-black relative z-10">Keungulan</h1>
+  <svg
+    className="absolute bottom-0 left-0 right-0"
+    width="100%"
+    height="40"
+  
+    viewBox="0 0 100 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 15 Q25 10, 50 15 T100 15"
+      stroke="#000"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
+  </svg>
+</div>
+
+
+        <div class="bb ze ki yn 2xl:ud-px-12.5 mt-20">
+         
           <div class="lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 uf zo xf ap zf bp mq grid ">
 
-
-             <div class="animate_top kn to/kk tc cg oq">
-              <div class="tc wf xf cf ae cd rg">
-              <img width="60" height="60" src="https://img.icons8.com/dusk/100/licence.png" alt="licence"/>              </div>
-              <div>
-              <h4 class="font-bold text-[20px] text-black pb-2">Resmi</h4>
-              <p>Tercatat resmi secara nasional & internasional</p>
-              </div>
-            </div>
-        
-
-             <div class="animate_top kn to/kk tc cg oq">
-              <div class="tc wf xf cf ae cd rg ">
-              <img width="60" height="60" src="https://img.icons8.com/color/100/checked-identification-documents.png" alt="checked-identification-documents"/>
-              </div>
-              <div>
-                <h4 class="font-bold text-[20px] text-black pb-2">Syarat Tidak Ribet</h4>
-                <p>Cukup Dengan Menggunakan foto KTP, Bisa Dikirim Melalui Whatsapp</p>
-              </div>
-            </div>
-
-       
+        {datalayanan.map((data) => {
+          return (
             <div class="animate_top kn to/kk tc cg oq">
-              <div class="tc wf xf cf ae cd rg">
-              <img width="70" height="70" src="https://img.icons8.com/external-tal-revivo-green-tal-revivo/70/external-pie-chart-file-queue-isolated-on-a-white-background-business-green-tal-revivo.png" alt="external-pie-chart-file-queue-isolated-on-a-white-background-business-green-tal-revivo"/>                             </div>
-              <div>
-
-                <h4 class="font-bold text-[20px] text-black pb-2">Proses Cepat</h4>
-                <p>Proses Cepat, online, melayani seluruh indonesia</p>
-              </div>
+            <div class="tc wf xf cf ae cd rg">
+            <img width="60" height="60" src={data.logo} alt="image"/>              
             </div>
-
-            <div class="animate_top kn to/kk tc cg oq">
-              <div class="tc wf xf cf ae cd rg ">
-              <img width="60" height="60" src="https://img.icons8.com/pulsar-color/60/password-check.png" alt="password-check"/>
-              </div>
-              <div>
-                <h4 class="font-bold text-[20px] text-black pb-2">Keamanan</h4>
-                <p>Dijamin aman dengan pendampingan konsultan kekayaan intelektual</p>
-              </div>
+            <div>
+            <h4 class="font-bold text-[20px] text-black pb-2">{data.name}</h4>
+            <p>{data.desc}</p>
             </div>
-
-            <div class="animate_top kn to/kk tc cg oq">
-              <div class="tc wf xf cf ae cd rg ">
-              <img width="60" height="60" src="https://img.icons8.com/pulsar-color/60/no-beverages.png" alt="no-beverages"/>
-              </div>
-              <div>
-                <h4 class="font-bold text-[20px] text-black pb-2">Tanpa Cek Usaha & tanpa cek product</h4>
-                <p>Proses Cepat tanpa cek usaha & anpa cek product</p>
-              </div>
-            </div>
-
-            <div class="animate_top kn to/kk tc cg oq">
-              <div class="tc wf xf cf ae cd rg ">
-              <img width="60" height="60" src="https://img.icons8.com/pulsar-color/60/document.png" alt="document"/>
-              </div>
-              <div>
-                <h4 class="font-bold text-[20px] text-black pb-2">Tanpa Ijin lain-nya</h4>
-                <p>Tanpa Perlu melampirkan ijin-ijin lainya</p>
-              </div>
-            </div>
+          </div>
+      
+          )
+        })}
           </div>
         </div>
       </section>

@@ -9,7 +9,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <Router>
+
+ 
+
       <Routes>
+
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/keunggulan" element={<Home />} />
@@ -19,7 +23,9 @@ function App() {
         <Route path="/layanan" element={<Home />} />
         <Route path="/contact" element={<Home />} />
         {/* Tambahkan rute lain sesuai kebutuhan */}
+
       </Routes>
+   
     </Router>
   );
 }

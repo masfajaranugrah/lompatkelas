@@ -30,8 +30,6 @@ function About() {
               <p href="#" data-fslightbox class="vc wf hg mb">
                 <span class="tc wf xf be dd rg i gh ua">
                   <span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
-                  {/* <img src="images/icon-play.svg" alt="Play" /> */}
- 
                   <img width="30" height="30" src="https://img.icons8.com/stickers/40/easy-skin-type-1.png" alt="easy-skin-type-1"/>                </span>
                 <span class="kk">Ayo "Patenkan" kan !</span>
               </p>

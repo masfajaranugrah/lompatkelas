@@ -1,17 +1,17 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, lazy} from 'react'
 import { useLocation } from 'react-router-dom';
 
-import Header from '../Components/Header'
-import Hero from '../Components/Hero'
-import About from '../Components/About'
-import Service from './../Components/Service';
-import Team from '../Components/Team';
-import Contact from '../Components/Contact';
-import Footer from '../Components/Footer';
-import Testimoni from '../Components/Testimoni';
-import Layanan from '../Components/Layanan';
-import Visimisi from './../Components/Visimisi';
-import Whatsapp from '../Components/whatsapp';
+const Header = lazy(() => import('../Components/Header'));
+const Hero = lazy(() => import('../Components/Hero'));
+const About = lazy(() => import('../Components/About'));
+const Service = lazy(() => import('../Components/Service'));
+const Team = lazy(() => import('../Components/Team'));
+const Contact = lazy(() => import('../Components/Contact'));
+const Footer = lazy(() => import('../Components/Footer'));
+const Layanan = lazy(() => import('../Components/Layanan'));
+const Visimisi = lazy(() => import('../Components/Visimisi'));
+const Whatsapp = lazy(() => import('../Components/whatsapp'));
+const According = lazy(() => import('../Components/According'));
  
 function Home() {
   const location = useLocation();
@@ -33,15 +33,15 @@ function Home() {
   return (
     <main>
 
-<Header/>
+      <Header/>
       <Hero id="hero"/>
       <Layanan id="keunggulan"/>
       <About id="about"/>
       <Visimisi id="visi-and-misi"/>
       <Team id="team"/>
       <Service id="layanan"/>
-      {/* <Testimoni id="testimoni"/> */}
-      <Contact id="contact"/>
+       <Contact id="contact"/>
+      <According/>
       <Whatsapp/>
       <Footer/>
  
