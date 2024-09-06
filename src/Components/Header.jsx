@@ -19,11 +19,11 @@ const Header = () => {
 
   return (
     <> 
-      <header className={`g s r vd ya cj ${stickyMenu ? 'hh sm _k dj bl ll' : ''}`}>
-        <div className="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
+      <header className={`   g s r vd ya cj ${stickyMenu ? 'hh sm _k dj bl ll' : ''}`}>
+        <div className="bb ze ki xn 2xl:ud-px-0 oo wf yf i container mx-auto">
           <div className="vd to/4 tc wf yf">
             <a href="index.html">
-              <h1 className='text-[30px] font-bold'>Lompat Kelas</h1>
+              <h1 className='text-[30px] text-black font-bold'>LK</h1>
             </a>
 
             {/* Hamburger Toggle BTN */}
@@ -70,25 +70,7 @@ const Header = () => {
                     Visi&Misi
                   </a>
                 </li>
-         
-                <li className="c i">
-                  <a
-                    href="#"
-                    className={`xl  text-black font-bold tc wf yf bg ${['blog-grid', 'blog-single', 'signin', 'signup', '404'].includes(page) ? 'mk' : ''}`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setDropdown(!dropdown);
-                    }}
-                  >
-                   Lainya
-                    <svg className={`th text-black mm we fd pf ${dropdown ? 'wh' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                      <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-                    </svg>
-                  </a>
-
-                  {/* Dropdown Start */}
-                    <ul className={`a ${dropdown ? 'tc' : ''}`}>
-                    <li>
+                     <li>
                   <a 
                     href="/about" 
                     className="xl font-bold text-black" 
@@ -113,16 +95,30 @@ const Header = () => {
                   </a>
                 </li>
                 <li><a href="/contact" className="xl font-bold text-black" onClick={() => setNavigationOpen(false)}>Contact</a></li>
-                  </ul>
+                   
+                {/* <li className="c i">
+                  <a
+                    href="#"
+                    className={`xl  text-black font-bold tc wf yf bg ${['blog-grid', 'blog-single', 'signin', 'signup', '404'].includes(page) ? 'mk' : ''}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setDropdown(!dropdown);
+                    }}
+                  >
+                   Lainya
+                    <svg className={`th text-black mm we fd pf ${dropdown ? 'wh' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                    </svg>
+                  </a>
+
+                  {/* Dropdown Start */}
+                    {/* <UL></UL> */}
                   {/* {/* Dropdown End */}
-                 </li>   
+                 {/* </li>     */}
 
               </ul>
             </nav>
-            <div>
-   
-            <a href="/contact"  class="lk gh dk rg tc wf xf _l gi hi">Contact</a>
-            </div>
+         
           </div>
         </div>
       </header>
