@@ -3,7 +3,7 @@ import Home from './Layouts/Home'
 
  
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
  
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<Navigate to="/" />} />
         <Route path="/keunggulan" element={<Home />} />
         <Route path="/about" element={<Home />} />
         <Route path="/visi-and-misi" element={<Home />} />

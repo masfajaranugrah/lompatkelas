@@ -1,61 +1,7 @@
-// import React from 'react'
 
-// export default function Hero() {
-//   return (
-//     <main id='helo'>
-//           <section className="gj do ir hj sp jr i pg">
-//          <div className="xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
-//           <img src="images/shape-01.svg" alt="shape" class="xc 2xl:ud-block h t -ud-left-[10%] ua ms:block" />
-//           <img src="images/shape-02.svg" alt="shape" class="xc 2xl:ud-block h u p va" />
-//           <img src="images/shape-03.svg" alt="shape" class="xc 2xl:ud-block h v w va" />
-//           <img src="images/shape-04.svg" alt="shape" class="h q r" />
-//           <img src="images/hero.png" alt="Woman" className="h q r ua" />
-//         </div>
-
-//          <div className="bb ze ki xn 2xl:ud-px-0">
-//           <div className="tc _o">
-//             <div className="animate_left jn/2">
-//               <h1 className="text-[15px] font-bold text-[#fa9161] text-center xl:text-left lg:text-left md:text-left">#LOMPAT KELAS</h1>
-//               <p className="lg:text-[50px] xl:text-[50px] lg:text-left xl:text-left text-black font-bold leading-[2rem] 
-//               xl:leading-[3rem] lg:leading-[3rem] text-center text-[25px] md:text-left">
-//                 Patenkan Karyamu, Lindungi Merekmu! Ayo Jadikan Indonesia Lebih Kuat!
-//               </p>
-
-//               <div className="tc tf yo zf mb text-center md:text-left xl:text-left lg:text-left">
-//                 <a href="/about" className="ek jk lk gh gi hi rg ml il vc lg:_d sm:_d md:_d xl:_d _l flex justify-center items-center"
-//                   >Tentang Kami
-//                   </a
-//                 >
  
-//                 <span className="tc sf ">
-//                   <p   className="inline-block ek xj kk wm"> Call  (+62) 812 2699 0080 </p>
-//                   <span className="inline-block">Untuk bertanya lebih lanjut</span>
-//                 </span>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-      
-//     </main>
-//   )
-// }
-
-
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
-
 export default function Example() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  
   return (
     <div className="bg-white"  id="home">
      
