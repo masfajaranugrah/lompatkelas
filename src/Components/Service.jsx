@@ -6,16 +6,10 @@ function Service() {
   return (
     <main>
         <section class="lj tp kr">
-        <div 
-  // x-data="{ sectionTitle: `Layanan Perusahaan`, sectionTitleText: `Berikut ini beberapa Layanan yang kami tawarkan.`}"
-  x-data="{ sectionTitle: `Layanan Perusahaan`}"
->
+        <div>
   <div class="animate_top bb ze rj ki xn vq" id='layanan'>
-    <h2
-      x-text="sectionTitle"
-      class="text-[40px] font-bold text-black pb-2 leading-10"
-    >
-    </h2>
+  <h2 className='flex justify-center items-center font-bold text-[40px] text-black mb-7'>Layanan Perusahaan</h2>
+
      <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 200 20"

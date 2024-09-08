@@ -3,17 +3,14 @@ import React from 'react'
 function Team() {
   return (
     <div id='team'>
-      <h1 className='flex justify-center items-center font-bold text-[40px] text-black mb-7'>Team</h1>
+      {/*<h1 className='flex justify-center items-center font-bold text-[40px] text-black mb-7'>Team</h1>*/}
         <section class="i pg ji gp uq" >
          <span class="rc h s r vd fd/5 fh rm"></span>
         <img src="images/shape-08.svg" alt="Shape Bg" class="h q r" />
         <img src="images/shape-09.svg" alt="Shape" class="of h y z/2" />
         <img src="images/shape-10.svg" alt="Shape" class="h _ aa" />
         <img src="images/shape-11.svg" alt="Shape" class="of h m ba" />
-
-         <div
-          x-data="{ sectionTitle: `Meet With Our Creative Dedicated Team`}"
-        >
+         <div>
           <div class="animate_top bb ze rj ki xn vq">
     <h2
             x-text="sectionTitle"

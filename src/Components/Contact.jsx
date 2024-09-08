@@ -12,17 +12,11 @@ function Contact() {
         <img src="images/shape-13.svg" alt="Shape" class="h r q" />
 
         
-        <div
-          x-data="{ sectionTitle: `kontak Kami`, sectionTitleText: `Berikut kami lampirkan informasi kontak yang dapat kamu hubungi.`}"
-        >
+        <div>
           <div class="animate_top bb ze rj ki xn vq">
-    <h2
-            x-text="sectionTitle"
-            class="fk vj pr kk wm on/5 gq/2 bb _b"
-    >
-    </h2>
-    <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-</div>
+          <h2 className='flex justify-center items-center font-bold text-[40px] text-black mb-7'>Kontak Kami</h2>
+          <p class="bb on/5 wo/5 hq">Berikut kami lampirkan informasi kontak yang dapat kamu hubungi.</p>
+</div>  
 
 
         </div>

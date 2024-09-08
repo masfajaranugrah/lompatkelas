@@ -34,14 +34,14 @@ function Home() {
     <main>
 
       <Header/>
-      <Hero id="hero"/>
+     <Hero id="hero"/>
       <Layanan id="keunggulan"/>
-      <About id="about"/>
+       <About id="about"/>
       <Visimisi id="visi-and-misi"/>
       <Team id="team"/>
       <Service id="layanan"/>
        <Contact id="contact"/>
-      <According/>
+      <According/> 
       <Whatsapp/>
       <Footer/>
  

@@ -15,12 +15,18 @@ const According = () => {
 
 
   return (
-   <section class="i pg qh rm ji hp">
+   <section class="i pg qh rm ji hp"> 
+      <div class="animate_top bb ze rj ki xn vq mb-20">
+          <h2 className='flex justify-center items-center font-bold text-[40px] text-black mb-7 leading-10'>FAQ Seputar
+          Lompat Kelas</h2>
+          <p class="bb on/5 wo/5 hq">Buat kamu yang masih penasaran sama Lompat Kelas.</p>
+      </div>
+
         <img src="images/shape-11.svg" alt="Shape" class="of h ga ha ke" />
         <img src="images/shape-07.svg" alt="Shape" class="h ia o ae jf" />
         <img src="images/shape-14.svg" alt="Shape" class="h ja ka" />
         <img src="images/shape-15.svg" alt="Shape" class="h q p" />
-
+      
         <div class="bb ze i va ki xn br px-4">
           <div class=" ">
           <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">

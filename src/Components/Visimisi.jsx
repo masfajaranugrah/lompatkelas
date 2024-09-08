@@ -4,20 +4,11 @@ function Visimisi() {
   return (
     <div>
          <section class="lj tp kr" >
-         <div
- id='visi-and-misi'
-          x-data="{ sectionTitle: `Visi Dan Misi`, sectionTitleText: `Visi Dan Misi Perusahaan.`}"
-        >
+         <div id='visi-and-misi' >
           <div  class="animate_top bb ze rj ki xn vq">
-    <h2 
-            x-text="sectionTitle"
-            class="text-[40px] font-bold text-black pb-2"
-    >
-    </h2>
-    <p class="text-[17px] font-semibold" x-text="sectionTitleText"></p>
+          <h2 className='flex justify-center items-center font-bold text-[40px] text-black mb-7'>Visi &  Misi</h2>
+ 
 </div>
-
-
         </div>
  
         <div class="bb ze ki xn yq mb en">
