@@ -8,7 +8,7 @@ function Service() {
         <section class="lj tp kr">
         <div>
   <div class="animate_top bb ze rj ki xn vq" id='layanan'>
-  <h2 className='flex justify-center items-center font-bold text-[40px] text-black mb-7'>Layanan Perusahaan</h2>
+  <h2 className='flex justify-center items-center font-bold text-[40px] text-black mb-7 leading-10'>Layanan Perusahaan</h2>
 
      <svg
       xmlns="http://www.w3.org/2000/svg"
