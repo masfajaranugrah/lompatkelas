@@ -26,7 +26,7 @@ const Header = () => {
     <> 
       <header className={`g s r vd ya cj ${stickyMenu ? 'hh sm _k dj bl ll' : ''}`}>
         <div className="bb ze ki xn 2xl:ud-px-0 oo wf yf i container mx-auto">
-          <div className="vd to/4 tc wf yf">
+          <div className="vd to/4 tc wf  yf">
             <a href="/">
               <h1 className='text-[30px] text-black font-bold'>LK</h1>
             </a>
@@ -47,7 +47,7 @@ const Header = () => {
             </button>
           </div>
 
-          <div className={`vd wo/4 sd qo f ho oo wf yf ${navigationOpen ? 'd hh rm sr td ud qg ug jc yh' : ''}`}>
+          <div className={`vd h-[100vh] wo/4 sd qo f ho oo wf yf ${navigationOpen ? 'd hh rm sr td ud qg ug jc yh' : ''}`}>
             <nav>
               <ul className="tc _o sf yo cg ep">
                 <li>
@@ -70,7 +70,7 @@ const Header = () => {
            
                 <li className="relative">
           <button
-            className="xl font-bold flex items-center"
+            className="xl font-bold flex text-black items-center"
             onClick={() => setDropdownOpen(!dropdownOpen)}
           >
             Profile
@@ -88,8 +88,8 @@ const Header = () => {
           {/* Dropdown Items */}
           {dropdownOpen && (
             <ul className="absolute mt-2 bg-white border rounded shadow-md w-[20rem] left-1/2 lg:left-[-4rem] xl:left-[-4rem] transform -translate-x-1/2">
-              <li><a href="/Profile-Perusahaan" className="block px-4 py-2 text-black">Profile Perusahaan</a></li>
-              <li><a href="/Profile-CEO" className="block px-4 py-2 text-black">Profile CEO</a></li>
+              <li><a href="/profile-perusahaan" className="block px-4 py-2 text-black">Profile Perusahaan</a></li>
+              <li><a href="/profile-ceo " className="block px-4 py-2 text-black">Profile CEO</a></li>
             </ul>
           )}
         </li>
@@ -139,7 +139,7 @@ const Header = () => {
               
                 <li className="relative">
           <button
-            className="xl font-bold flex items-center"
+            className="xl text-black font-bold flex items-center"
             onClick={() => setDropdownOpen1(!dropdownOpen1)}
           >
             Lainya
