@@ -5,7 +5,7 @@ function Service() {
  
   return (
     <main>
-        <section class="lj tp kr">
+        <section class="lj tp kr mt-5">
         <div>
   <div class="animate_top bb ze rj ki xn vq" id='layanan'>
   <h2 className='flex justify-center items-center font-bold text-[40px] text-black mb-7 leading-10'>Layanan Perusahaan</h2>
@@ -33,18 +33,17 @@ function Service() {
 </div>
 
         
-        <div class="bb ze ki xn yq mb en">
+        <div >
           <div>
 
-             <ul role="list" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3">
+             <ul role="list" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-2">
              
              {dataService.map((lay) => {
                 return(
                        
-                     <li class="rounded-2xl border border-gray-200 p-8" key={lay.id}>
-                        {lay.logo}
-                          <h3 class="mt-6 font-semibold text-gray-900 text-[30px] leading-10">{lay.name}</h3>
-                          <p class="mt-2 text-gray-700 text-[15px]">{lay.des}</p>
+                     <li class="rounded-2xl  p-8" key={lay.id}>
+                       <img src={lay.images} alt="" />
+                         
                     </li> 
                 )
               })

@@ -4,6 +4,8 @@ import { Link, useLocation } from 'react-router-dom';
 const Header = () => {
   const [stickyMenu, setStickyMenu] = useState(false);
   const [navigationOpen, setNavigationOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen1, setDropdownOpen1] = useState(false);
   const location = useLocation(); // Hook to get the current location
   
   // Function to handle scroll for sticky menu
@@ -25,7 +27,7 @@ const Header = () => {
       <header className={`g s r vd ya cj ${stickyMenu ? 'hh sm _k dj bl ll' : ''}`}>
         <div className="bb ze ki xn 2xl:ud-px-0 oo wf yf i container mx-auto">
           <div className="vd to/4 tc wf yf">
-            <a href="index.html">
+            <a href="/">
               <h1 className='text-[30px] text-black font-bold'>LK</h1>
             </a>
 
@@ -64,7 +66,34 @@ const Header = () => {
                       Keunggulan
                   </Link>
                 </li>   
-                <li>
+           
+           
+                <li className="relative">
+          <button
+            className="xl font-bold flex items-center"
+            onClick={() => setDropdownOpen(!dropdownOpen)}
+          >
+            Profile
+            <svg
+      className={`ml-2 transform ${dropdownOpen ? 'rotate-180' : ''}`}
+      width="12"
+      height="12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M6 9L3 6h6L6 9z" fill="currentColor" />
+    </svg>
+          </button>
+
+          {/* Dropdown Items */}
+          {dropdownOpen && (
+            <ul className="absolute mt-2 bg-white border rounded shadow-md w-[20rem] left-1/2 lg:left-[-4rem] xl:left-[-4rem] transform -translate-x-1/2">
+              <li><a href="/Profile-Perusahaan" className="block px-4 py-2 text-black">Profile Perusahaan</a></li>
+              <li><a href="/Profile-CEO" className="block px-4 py-2 text-black">Profile CEO</a></li>
+            </ul>
+          )}
+        </li>
+                {/* <li>
                   <Link 
                     to="/visi-and-misi" 
                     className={`xl font-bold ${isActive('/visi-and-misi') ? 'text-blue-500' : 'text-black'}`} 
@@ -72,22 +101,7 @@ const Header = () => {
                     Visi & Misi
                   </Link>
                 </li>
-                <li>
-                  <Link 
-                    to="/about" 
-                    className={`xl font-bold ${isActive('/about') ? 'text-blue-500' : 'text-black'}`} 
-                    onClick={() => setNavigationOpen(false)}>
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link 
-                    to="/team" 
-                    className={`xl font-bold ${isActive('/team') ? 'text-blue-500' : 'text-black'}`} 
-                    onClick={() => setNavigationOpen(false)}>
-                    Team
-                  </Link>
-                </li>
+             */}
                 <li>
                   <Link 
                     to="/layanan" 
@@ -98,12 +112,57 @@ const Header = () => {
                 </li>
                 <li>
                   <Link 
+                    to="/testimoni" 
+                    className={`xl font-bold ${isActive('/testimoni') ? 'text-blue-500' : 'text-black'}`} 
+                    onClick={() => setNavigationOpen(false)}>
+                    Testimoni
+                  </Link>
+                </li>
+                <li>
+                  <Link 
+                    to="/faq" 
+                    className={`xl font-bold ${isActive('/faq') ? 'text-blue-500' : 'text-black'}`} 
+                    onClick={() => setNavigationOpen(false)}>
+                    FAQ
+                  </Link>
+                </li>
+              
+                <li>
+                  <Link 
                     to="/contact" 
                     className={`xl font-bold ${isActive('/contact') ? 'text-blue-500' : 'text-black'}`} 
                     onClick={() => setNavigationOpen(false)}>
                     Contact
                   </Link>
                 </li>
+              
+              
+                <li className="relative">
+          <button
+            className="xl font-bold flex items-center"
+            onClick={() => setDropdownOpen1(!dropdownOpen1)}
+          >
+            Lainya
+            <svg
+      className={`ml-2 transform ${dropdownOpen1 ? 'rotate-180' : ''}`}
+      width="12"
+      height="12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M6 9L3 6h6L6 9z" fill="currentColor" />
+    </svg>
+          </button>
+
+          {/* Dropdown Items */}
+        {dropdownOpen1 && (
+            <ul className="absolute mt-2 bg-white border rounded shadow-md w-[20rem] left-1/2 lg:left-[-4rem] xl:left-[-4rem] transform -translate-x-1/2">
+              <li><a href="/faq" className="block px-4 py-2 text-black">Kursus</a></li>
+              <li><a href="https://lompatkelas.net/" className="block px-4 py-2 text-black">lompatkelas.net</a></li>
+       
+            </ul>
+          )}  
+         </li>
               </ul>
             </nav>
           </div>

@@ -10,8 +10,6 @@ function Contact() {
         <img src="images/shape-07.svg" alt="Shape" class="h w da ee" />
         <img src="images/shape-12.svg" alt="Shape" class="h p s" />
         <img src="images/shape-13.svg" alt="Shape" class="h r q" />
-
-        
         <div>
           <div class="animate_top bb ze rj ki xn vq">
           <h2 className='flex justify-center items-center font-bold text-[40px] text-black mb-7'>Kontak Kami</h2>
@@ -29,7 +27,7 @@ function Contact() {
 
               <div class="fb">
                 <h4 class="wj kk wm cc">Email Address</h4>
-                <p><a href="#">admin@lompatkelas.com</a></p>
+                <p><a href="#">info@lompatkelas.com</a></p>
               </div>
               <div class="fb">
                 <h4 class="wj kk wm cc">Lokasi</h4>
@@ -90,18 +88,17 @@ function Contact() {
               </div>
             </div>
 
-            <div class="animate_top w-full nn/5 vo/3 vk sg hh sm yh tq">
+            <div class="animate_top w-full nn/5 vo/3 vk sg hh sm  tq">
              <div>
-             <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.014286518512!2d110.7732242!3d-7.573420499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a15b260cb7611%3A0x4cc3ab2746bccd44!2sPatenOnline.com!5e0!3m2!1sid!2sid!4v1725516359627!5m2!1sid!2sid"
-  width="100%"
-  height="450"
-  style={{ border: 0 }}
-  allowFullScreen=""
-  loading="lazy"
-  referrerPolicy="no-referrer-when-downgrade"
-/>
-             </div>
+             <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.0143353915964!2d110.77064927411703!3d-7.573415174806865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a15b260cb7611%3A0x4cc3ab2746bccd44!2sLompatkelas.com!5e0!3m2!1sid!2sid!4v1725976221938!5m2!1sid!2sid" 
+    width="100%" 
+    height="450" 
+  
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"/>             
+</div>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 {
   "name": "lompat",
   "private": true,
+  "homepage": "https://lompatkelas.com/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -12,9 +13,11 @@
   "dependencies": {
     "@headlessui/react": "^2.1.5",
     "@heroicons/react": "^2.1.5",
+    "clsx": "^2.1.1",
     "feather-icons": "^4.29.2",
     "flowbite": "^2.5.1",
-    "framer-motion": "^11.5.2",
+    "framer-motion": "^11.5.4",
+    "path": "^0.12.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1",
@@ -22,6 +25,7 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.13",
     "swiper": "^11.1.12",
+    "tailwind-merge": "^2.5.2",
     "twin.macro": "^3.4.1"
   },
   "devDependencies": {

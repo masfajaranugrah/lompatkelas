@@ -15,7 +15,7 @@ const According = () => {
 
 
   return (
-   <section class="i pg qh rm ji hp"> 
+   <section class="i pg qh rm ji hp" id='faq'> 
       <div class="animate_top bb ze rj ki xn vq mb-20">
           <h2 className='flex justify-center items-center font-bold text-[40px] text-black mb-7 leading-10'>FAQ Seputar
           Lompat Kelas</h2>

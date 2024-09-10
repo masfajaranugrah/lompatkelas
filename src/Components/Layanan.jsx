@@ -3,7 +3,7 @@ import {datalayanan} from '/src/db/db.jsx'
 function Layanan() {
   return (
     <div id="keunggulan">
-      <section  className='mt-20'>
+      <section  className='my-20'>
       <div className="relative pb-6 flex justify-center items-center">
   <h1 className="text-[40px] font-bold text-black relative z-10">Keungulan</h1>
   <svg

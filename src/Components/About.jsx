@@ -24,7 +24,9 @@ function About() {
               <h4 class="text-[18px]  font-bold  text-[#fa9161]"># Lompat Kelas</h4>
               <h2 class="text-[40px] text-black font-bold leading-10 my-2">Apakah kamu tau apa itu Lompat Kelas ?</h2>
               <p class="text-[18px]">
-                Lompat Kelas adalah sebuah perusahaan yang bergerak dalam bidang konsultasi kekayaan intelektual. yang berpusat di  jakarta selatan. Perusahaan ini didirikan pada tanggal 8 september 2015. Para Pendiri perusahaan adalah  Bp. Eko Budi Santoso dan Ibu.Darwati. saat ini Bp. Eko Budi Santoso menjabat sebagai Direktur Utama (Chief Executive Officer), sedangkan Ibu.Darwati menjaabat sebagi Komisaris.  
+                Lompat Kelas adalah sebuah perusahaan yang bergerak dalam bidang 
+                konsultasi kekayaan intelektual. yang berpusat di  jakarta selatan. 
+                Perusahaan ini didirikan pada tanggal 8 september 2015.
               </p>
 
               <p href="#" data-fslightbox class="vc wf hg mb">

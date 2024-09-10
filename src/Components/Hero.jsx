@@ -33,7 +33,7 @@ export default function Example() {
                 </p>
                 <div class="flex mt-8">
                 <span class="relative inline-flex">
-                <a href="/about" class="uppercase py-2 px-4 rounded-lg bg-[#4e6bff] border-2 border-transparent text-white text-md mr-4 hover:bg-[#4e6bff]">
+                <a href="/profile-perusahaan" class="uppercase py-2 px-4 rounded-lg bg-[#4e6bff] border-2 border-transparent text-white text-md mr-4 hover:bg-[#4e6bff]">
                         Tentang Kami
                     </a>
     <span class="flex absolute h-3 w-3 top-0 right-0 -mt-1 mr-[0.75rem]">
