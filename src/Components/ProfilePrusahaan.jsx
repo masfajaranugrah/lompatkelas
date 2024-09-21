@@ -1,6 +1,5 @@
 import React from "react";
-import LazyLoad from "react-lazyload";
-const ProfilePerusahaan = () => {
+ const ProfilePerusahaan = () => {
   return (
     <div id="tentang-kami">
       <section className="ji gp uq 2xl:ud-py-35 pg">
@@ -17,17 +16,11 @@ const ProfilePerusahaan = () => {
                 {/* <img src="images/2.jpg" alt="About" className="w-[200px]" /> */}
               </div>
               <div>
-                <LazyLoad height={200} offset={100}>
-                  <img src="images/shape-06.svg" alt="Shape" />
-                </LazyLoad>
-                <LazyLoad height={200} offset={100}>
-                  <img src="images/2.jpg" alt="About" className="ob gb" />
-                </LazyLoad>
-
-                <LazyLoad height={200} offset={100}>
-                  <img src="images/shape-07.svg" alt="Shape" className="bb" />
-                </LazyLoad>
-              </div>
+                   <img src="images/shape-06.svg" alt="Shape" />
+                   <img src="images/2.jpg" alt="About" className="ob gb" />
+ 
+                   <img src="images/shape-07.svg" alt="Shape" className="bb" />
+               </div>
             </div>
 
             <div className="animate_right jn/2">
@@ -69,15 +62,13 @@ const ProfilePerusahaan = () => {
               <a href="#" className="vc wf hg mb">
                 <span className="tc wf xf be dd rg i gh ua">
                   <span className="nf h vc yc vd rg gh qk -ud-z-1"></span>
-                  <LazyLoad height={200} offset={100}>
-                    <img
+                     <img
                       width="30"
                       height="30"
                       src="https://img.icons8.com/stickers/40/easy-skin-type-1.png"
                       alt="easy-skin-type-1"
                     />
-                  </LazyLoad>
-                </span>
+                 </span>
                 <span className="kk">Ayo "Patenkan" kan !</span>
               </a>
             </div>

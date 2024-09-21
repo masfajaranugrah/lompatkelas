@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { dataPertanyaan } from '@/db/db.jsx';  // Make sure to adjust the path based on your file structure
-import LazyLoad from 'react-lazyload';
-const According = () => {
+ const According = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -21,21 +20,13 @@ const According = () => {
           Lompat Kelas</h2>
           <p class="bb on/5 wo/5 hq">Buat kamu yang masih penasaran sama Lompatkelas.com</p>
       </div>
-      <LazyLoad height={200} offset={100}>
-        <img src="images/shape-11.svg" alt="Shape" class="of h ga ha ke" />
-      </LazyLoad>
+         <img src="images/shape-11.svg" alt="Shape" class="of h ga ha ke" />
+ 
+       <img src="images/shape-07.svg" alt="Shape" class="h ia o ae jf" />
+       <img src="images/shape-14.svg" alt="Shape" class="h ja ka" />
 
-      <LazyLoad height={200} offset={100}>
-      <img src="images/shape-07.svg" alt="Shape" class="h ia o ae jf" />
-      </LazyLoad>
-      <LazyLoad height={200} offset={100}>
-      <img src="images/shape-14.svg" alt="Shape" class="h ja ka" />
-
-      </LazyLoad>
-      <LazyLoad height={200} offset={100}>
-      <img src="images/shape-15.svg" alt="Shape" class="h q p" />
-      </LazyLoad>
-      
+       <img src="images/shape-15.svg" alt="Shape" class="h q p" />
+       
       
         <div class="bb ze i va ki xn br px-4">
           <div class=" ">

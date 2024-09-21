@@ -1,6 +1,5 @@
 import React from 'react'
-import LazyLoad from 'react-lazyload';
-export default function Hero() {
+ export default function Hero() {
   
   return (
     <div className="bg-white   xl:my-3 mt-20 mb-40 md:my-40"  id="home">
@@ -46,11 +45,9 @@ export default function Hero() {
                    
                 </div>
             </div>
-            <div class="hidden sm:block sm:w-1/3 lg:w-[900px] relative">
-            <LazyLoad height={200} offset={100}>
-            <img src="images/modern.gif" class="max-w-[32rem] md:max-w-[32rem] m-auto"/>
-            </LazyLoad>
-            </div>
+            <div class="hidden sm:block sm:w-[100p] lg:w-[900px] relative">
+             <img src="images/modern.gif" class="max-w-[32rem] md:max-w-[25rem] m-auto"/>
+             </div>
 
             
         </div>

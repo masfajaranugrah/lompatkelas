@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { dataService } from '@/db/db.jsx';  // Make sure to adjust the path based on your file structure
-import LazyLoad from "react-lazyload";
-
+ 
 function Service() {
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -51,10 +50,9 @@ function Service() {
                 return(
                        
                      <li class="rounded-2xl  p-8" key={lay.id}>
-                      <LazyLoad height={100} offset={100}>
-                       <img className='w-[100%]' src={lay.images} alt="layanan" onClick={() => openImage(lay.images)}
+                        <img className='w-[100%]' src={lay.images} alt="layanan" onClick={() => openImage(lay.images)}
  />
-                     </LazyLoad> 
+                
                     </li> 
                 )
               })

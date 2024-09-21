@@ -1,6 +1,5 @@
 import React from "react";
-import LazyLoad from "react-lazyload";
-import { Testimonials } from '@/db/db.jsx';
+ import { Testimonials } from '@/db/db.jsx';
 
 export default function InfiniteMovingCardsDemo() {
 
@@ -37,15 +36,13 @@ export default function InfiniteMovingCardsDemo() {
                 key={data.id}
               >
                 <div className="flex items-center">
-                  <div className="w-[4rem] h-[4rem] overflow-hidden rounded-full">
-                    <LazyLoad height={200} offset={100}>
-                      <img
+                  <div className="w-[6rem] h-[4rem] md:w-[6rem] md:h-[4rem] xl:w-[4rem] xl:h-[4rem]  lg:w-[4rem] lg:h-[4rem] overflow-hidden rounded-full">
+                       <img
                         className="w-full h-full object-cover"
                         src={data.images}
                         alt={data.name}
                       />
-                    </LazyLoad>
-                  </div>
+                   </div>
                   <div className="ml-5">
                     <h2 className="text-xl font-bold text-black mb-2">
                       {data.name}

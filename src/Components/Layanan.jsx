@@ -1,7 +1,6 @@
 import React from 'react'
 import {datalayanan} from '@/db/db.jsx';
-import LazyLoad from 'react-lazyload'
-function Layanan() {
+ function Layanan() {
   return (
     <div id="keunggulan">
       <section  className='my-20'>
@@ -34,10 +33,8 @@ function Layanan() {
           return (
             <div class="animate_top kn to/kk tc cg oq">
             <div class="tc wf xf cf ae cd rg">
-            <LazyLoad height={200} offset={100}>
-            <img width="60" height="60" src={data.logo} alt="image"/>              
-            </LazyLoad>
-            </div>
+             <img width="60" height="60" src={data.logo} alt="image"/>              
+             </div>
             <div>
             <h4 class="font-bold text-[20px] text-black pb-2">{data.name}</h4>
             <p>{data.desc}</p>
