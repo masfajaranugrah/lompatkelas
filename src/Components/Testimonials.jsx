@@ -1,24 +1,8 @@
 import React from "react";
+import LazyLoad from "react-lazyload";
+import { Testimonials } from '@/db/db.jsx';
 
 export default function InfiniteMovingCardsDemo() {
-  const Testimonials = [
-    {
-      id: "1",
-      images: "./images/aaa.jpg",
-      name: "Didik Sugiarto, S.Si, Apt",
-      des: "Owner Apotek XP Farma Yogyakarta",
-      pesan:
-        "Banyak yang berpikir bahwa daftar 'paten' merek itu hanya bisa dilakukan oleh perusahaan besar. Padahal usaha yang tidak besar seperti saya juga bisa!",
-    },
-    {
-      id: "2",
-      images: "./images/a1.jpg",
-      name: "Muhammad Rifky Syaifullah",
-      des: "Produsen obat herbal SIMPROFIT Pekanbaru-Riau",
-      pesan:
-        "Bangga! Dengan pendaftaran merek, akhirnya merek obat herbal kami bisa tercatat secara nasional dan internasional dalam Global Brand Database.",
-    },
-  ];
 
   return (
     <main id="testimoni">
@@ -49,16 +33,18 @@ export default function InfiniteMovingCardsDemo() {
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
             {Testimonials.map((data) => (
               <li
-                className="list-none bg-white rounded-2xl border border-gray-200 p-8 shadow-md"
+                className="list-none bg-white mx-[10px] rounded-2xl border border-gray-200 p-8 shadow-md"
                 key={data.id}
               >
                 <div className="flex items-center">
-                  <div className="w-24 h-24 overflow-hidden rounded-full">
-                    <img
-                      className="w-full h-full object-cover"
-                      src={data.images}
-                      alt={data.name}
-                    />
+                  <div className="w-[4rem] h-[4rem] overflow-hidden rounded-full">
+                    <LazyLoad height={200} offset={100}>
+                      <img
+                        className="w-full h-full object-cover"
+                        src={data.images}
+                        alt={data.name}
+                      />
+                    </LazyLoad>
                   </div>
                   <div className="ml-5">
                     <h2 className="text-xl font-bold text-black mb-2">
@@ -67,6 +53,12 @@ export default function InfiniteMovingCardsDemo() {
                     <p className="text-md font-medium text-gray-700">
                       {data.des}
                     </p>
+                    {/* Star Rating */}
+                    <div className="flex items-center mt-2">
+                      {[...Array(5)].map((_, index) => (
+                        <i class="fa-solid fa-star text-[#ffe000]"></i>
+                      ))}
+                    </div>
                   </div>
                 </div>
                 <p className="mt-6 text-gray-900 text-[30px] leading-relaxed">

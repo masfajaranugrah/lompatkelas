@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { dataPertanyaan } from '/src/db/db.jsx';  // Make sure to adjust the path based on your file structure
-
+import { dataPertanyaan } from '@/db/db.jsx';  // Make sure to adjust the path based on your file structure
+import LazyLoad from 'react-lazyload';
 const According = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -19,13 +19,23 @@ const According = () => {
       <div class="animate_top bb ze rj ki xn vq mb-20">
           <h2 className='flex justify-center items-center font-bold text-[40px] text-black mb-7 leading-10'>FAQ Seputar
           Lompat Kelas</h2>
-          <p class="bb on/5 wo/5 hq">Buat kamu yang masih penasaran sama Lompat Kelas.</p>
+          <p class="bb on/5 wo/5 hq">Buat kamu yang masih penasaran sama Lompatkelas.com</p>
       </div>
-
+      <LazyLoad height={200} offset={100}>
         <img src="images/shape-11.svg" alt="Shape" class="of h ga ha ke" />
-        <img src="images/shape-07.svg" alt="Shape" class="h ia o ae jf" />
-        <img src="images/shape-14.svg" alt="Shape" class="h ja ka" />
-        <img src="images/shape-15.svg" alt="Shape" class="h q p" />
+      </LazyLoad>
+
+      <LazyLoad height={200} offset={100}>
+      <img src="images/shape-07.svg" alt="Shape" class="h ia o ae jf" />
+      </LazyLoad>
+      <LazyLoad height={200} offset={100}>
+      <img src="images/shape-14.svg" alt="Shape" class="h ja ka" />
+
+      </LazyLoad>
+      <LazyLoad height={200} offset={100}>
+      <img src="images/shape-15.svg" alt="Shape" class="h q p" />
+      </LazyLoad>
+      
       
         <div class="bb ze i va ki xn br px-4">
           <div class=" ">
@@ -42,13 +52,13 @@ const According = () => {
           aria-expanded={openIndex === index}
           aria-controls={`accordion-flush-body-${index}`}
         >
-          <span>{data.question}</span>
+          <span className='text-left text-[20px]'>{data.question}</span>
           <span className="text-[30px]">{openIndex === index ? '-' : '+'}</span>
         </button>
       </h2>
       <div id={`accordion-flush-body-${index}`} className={`${openIndex === index ? '' : 'hidden'}`} aria-labelledby={`accordion-flush-heading-${index}`}>
         <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-          <p className="mb-2 text-gray-500 dark:text-gray-400">
+          <p className="mb-2 text-gray-500 text-[20px]">
            {data.answer}
           </p>
         

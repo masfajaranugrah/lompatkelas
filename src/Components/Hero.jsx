@@ -1,9 +1,9 @@
-
- 
-export default function Example() {
+import React from 'react'
+import LazyLoad from 'react-lazyload';
+export default function Hero() {
   
   return (
-    <div className="bg-white"  id="home">
+    <div className="bg-white   xl:my-3 mt-20 mb-40 md:my-40"  id="home">
      
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
@@ -25,7 +25,7 @@ export default function Example() {
                 <h1 class="font-bebas-neue uppercase text-6xl text-center xl:text-left  lg:text-left md:text-left sm:text-8xl font-black flex flex-col leading-none dark:text-white text-gray-800">
                    Lompat
                     <span class="text-5xl sm:text-7xl">
-                        Kelas
+                        Kelas Indonesia
                     </span>
                 </h1>
                 <p class="lg:text-[20px] xl:text-[20px] text-center xl:text-left  lg:text-left md:text-left  text-[20px] my-5  text-gray-700 dark:text-white">
@@ -33,7 +33,7 @@ export default function Example() {
                 </p>
                 <div class="flex mt-8">
                 <span class="relative inline-flex">
-                <a href="/profile-perusahaan" class="uppercase py-2 px-4 rounded-lg bg-[#4e6bff] border-2 border-transparent text-white text-md mr-4 hover:bg-[#4e6bff]">
+                <a href="/tentang-kami" class="uppercase py-2 px-4 rounded-lg bg-[#4e6bff] border-2 border-transparent text-white text-md mr-4 hover:bg-[#4e6bff]">
                         Tentang Kami
                     </a>
     <span class="flex absolute h-3 w-3 top-0 right-0 -mt-1 mr-[0.75rem]">
@@ -47,9 +47,9 @@ export default function Example() {
                 </div>
             </div>
             <div class="hidden sm:block sm:w-1/3 lg:w-[900px] relative">
-             
+            <LazyLoad height={200} offset={100}>
             <img src="images/modern.gif" class="max-w-[32rem] md:max-w-[32rem] m-auto"/>
-
+            </LazyLoad>
             </div>
 
             

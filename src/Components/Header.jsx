@@ -66,9 +66,16 @@ const Header = () => {
                       Keunggulan
                   </Link>
                 </li>   
+                <li>
+                  <Link 
+                    to="/tentang-kami" 
+                    className={`xl font-bold ${isActive('/tentang-kami') ? 'text-blue-500' : 'text-black'}`} 
+                    onClick={() => setNavigationOpen(false)}>
+                      About
+                  </Link>
+                </li>   
            
-           
-                <li className="relative">
+                {/* <li className="relative">
           <button
             className="xl font-bold flex text-black items-center"
             onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -86,13 +93,13 @@ const Header = () => {
           </button>
 
           {/* Dropdown Items */}
-          {dropdownOpen && (
+          {/* {dropdownOpen && (
             <ul className="absolute mt-2 bg-white border rounded shadow-md w-[20rem] left-1/2 lg:left-[-4rem] xl:left-[-4rem] transform -translate-x-1/2">
               <li><a href="/profile-perusahaan" className="block px-4 py-2 text-black">Profile Perusahaan</a></li>
               <li><a href="/profile-ceo " className="block px-4 py-2 text-black">Profile CEO</a></li>
             </ul>
           )}
-        </li>
+        </li>  */}
                 {/* <li>
                   <Link 
                     to="/visi-and-misi" 
@@ -135,9 +142,23 @@ const Header = () => {
                     Contact
                   </Link>
                 </li>
+                <li>
+                  <Link 
+                    to="/" 
+                    className={`xl font-bold ${isActive('/') ? 'text-blue-500' : 'text-black'}`} 
+                    onClick={() => setNavigationOpen(false)}>
+                    Kursus
+                  </Link>
+                </li>   <li>
+                  <Link 
+                    to="https://lompatkelas.net/" target='_blank'
+                    className={`xl font-bold ${isActive('https://lompatkelas.net/') ? 'text-blue-500' : 'text-black'}`} 
+                    onClick={() => setNavigationOpen(false)}>
+                    Support System
+                  </Link>
+                </li>
               
-              
-                <li className="relative">
+                {/* <li className="relative">
           <button
             className="xl text-black font-bold flex items-center"
             onClick={() => setDropdownOpen1(!dropdownOpen1)}
@@ -155,14 +176,14 @@ const Header = () => {
           </button>
 
           {/* Dropdown Items */}
-        {dropdownOpen1 && (
+        {/* {dropdownOpen1 && (
             <ul className="absolute mt-2 bg-white border rounded shadow-md w-[20rem] left-1/2 lg:left-[-4rem] xl:left-[-4rem] transform -translate-x-1/2">
               <li><a href="/faq" className="block px-4 py-2 text-black">Kursus</a></li>
               <li><a href="https://lompatkelas.net/" className="block px-4 py-2 text-black">lompatkelas.net</a></li>
        
             </ul>
           )}  
-         </li>
+         </li>   */}
               </ul>
             </nav>
           </div>

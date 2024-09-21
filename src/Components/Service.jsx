@@ -1,8 +1,17 @@
-import React from 'react'
-import { dataService } from '/src/db/db.jsx';  // Make sure to adjust the path based on your file structure
+import React, { useState } from 'react';
+import { dataService } from '@/db/db.jsx';  // Make sure to adjust the path based on your file structure
+import LazyLoad from "react-lazyload";
 
 function Service() {
- 
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openImage = (image) => {
+    setSelectedImage(image);
+  };
+
+  const closeImage = () => {
+    setSelectedImage(null);
+  };
   return (
     <main>
         <section class="lj tp kr mt-5">
@@ -34,7 +43,7 @@ function Service() {
 
         
         <div >
-          <div>
+          <div className='container mx-auto'>
 
              <ul role="list" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-2">
              
@@ -42,8 +51,10 @@ function Service() {
                 return(
                        
                      <li class="rounded-2xl  p-8" key={lay.id}>
-                       <img src={lay.images} alt="" />
-                         
+                      <LazyLoad height={100} offset={100}>
+                       <img className='w-[100%]' src={lay.images} alt="layanan" onClick={() => openImage(lay.images)}
+ />
+                     </LazyLoad> 
                     </li> 
                 )
               })
@@ -54,6 +65,20 @@ function Service() {
           </div>
         </div>
       </section>
+
+
+      {selectedImage && (
+        <div
+          className="fixed z-[99999] inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
+          onClick={closeImage}
+        >
+          <img
+            src={selectedImage}
+            alt="Full Size"
+            className="max-w-full max-h-full rounded-lg"
+          />
+        </div>
+      )}
     </main>
   )
 }
